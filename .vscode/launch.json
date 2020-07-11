@@ -25,6 +25,21 @@
             "sourceFileMap": {
                 "/Views": "${workspaceFolder}/Views"
             }
+        },
+        {
+            "name": "Launch angular-workspace",
+            "type": "chrome",
+            "request": "launch",
+            "preLaunchTask": "watch angular-workspace",
+            "url": "http://localhost:4200/#",
+            "webRoot": "${workspaceFolder}/angular-workspace/projects/front-end",
+            "sourceMapPathOverrides": {
+                "webpack:/*": "${webRoot}/*",
+                "/./*": "${webRoot}/*",
+                "/src/*": "${webRoot}/*",
+                "/*": "*",
+                "/./~/*": "${webRoot}/node_modules/*"
+            }
         }
     ]
 }
