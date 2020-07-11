@@ -28,7 +28,7 @@
         },
         {
             "name": "Launch angular-workspace",
-            "type": "chrome",
+            "type": "pwa-chrome",
             "request": "launch",
             "preLaunchTask": "watch angular-workspace",
             "url": "http://localhost:4200/#",
